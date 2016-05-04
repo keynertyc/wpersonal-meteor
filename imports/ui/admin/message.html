@@ -1,0 +1,15 @@
+<template name="message">
+    <a href="/admin/messages" class="btn btn-success btn-xl wow tada">Back</a>
+    <br>
+    <div>
+        <h1>Message:</h1>
+        <label for="">From:</label>
+        <p>{{name}}: {{from}}</p>
+        <label for="">Subject:</label>
+        <p>{{subject}}</p>
+        <label for="">Date:</label>
+        <p>{{formatDate createdAt}}</p>
+        <label for="">Message:</label>
+        <p>{{message}}</p>
+    </div>
+</template>

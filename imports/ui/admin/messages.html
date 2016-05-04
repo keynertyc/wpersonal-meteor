@@ -1,0 +1,32 @@
+<template name="messages">
+    <button class="btn btn-success btn-xl wow tada btn-read">Mark as Read</button>
+    <button class="btn btn-info btn-xl wow tada btn-unread">Mark as unRead</button>
+    <button class="btn btn-danger btn-xl wow tada btn-remove">Delete</button>
+    <br><br>
+    <div class="table-responsive">
+        <table class="table table-hover" id="table-messages">
+            <thead>
+            <tr>
+                <th><a href="#" class="btn-link check-all">All</a> | <a href="#" class="btn-link check-none">None</a></th>
+                <th>From</th>
+                <th>Subject</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each messages}}
+                <tr class="{{#if read}} danger {{/if}}">
+                    <td>
+                        <input type="checkbox" name="ids" value="{{_id}}">
+                    </td>
+                    <td>{{from}}</td>
+                    <td>{{subject}}</td>
+                    <td>{{formatDate createdAt}}</td>
+                    <td><a class="btn btn-info" href="/admin/message/{{_id}}">Show</a>&nbsp;<a class="btn btn-danger btn-removeOne" href="#">Remove</a></td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>

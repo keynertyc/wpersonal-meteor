@@ -1,0 +1,155 @@
+<template name="home">
+    {{ >navbar }}
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 style="padding-top: 90px;">Keyner W.<br>Tupac Yupanqui Caballero</h1>
+                <hr>
+                <p>{{_ "profession"}}
+                    <br><br><img src="/img/img_photo.jpg" class="img-thumbnail img-circle" alt="Keyner TYC" style="width: 15%; opacity: 0.9;"></p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll" style="text-transform: none;">const title = '{{_ "title_profile"}}'</a>
+                <p><br>
+                <a href="https://pe.linkedin.com/in/keynertyc" target="_blank" class="btn btn-social-icon btn-linkedin btn-lg">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+                <a href="https://facebook.com/keynertyc" target="_blank" class="btn btn-social-icon btn-facebook btn-lg">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a href="https://github.com/keynertyc" target="_blank" class="btn btn-social-icon btn-github btn-lg">
+                    <span class="fa fa-github"></span>
+                </a>
+                <a href="https://twitter.com/keynertyc" target="_blank" class="btn btn-social-icon btn-twitter btn-lg">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">{{_ "text_1"}}</h2>
+                    <hr class="light">
+                    <p class="text-faded">{{_ "text_2"}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Javascript
+                                </div>
+                                <div class="project-name">
+                                    NodeJS, Meteor, SailsJS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    PHP
+                                </div>
+                                <div class="project-name">
+                                    Laravel, CakePHP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Devops
+                                </div>
+                                <div class="project-name">
+                                    Linux (CentOS, Debian), MacOS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Cloud
+                                </div>
+                                <div class="project-name">
+                                    Heroku, Digital Ocean, AWS, RackSpace
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Mobile
+                                </div>
+                                <div class="project-name">
+                                    iOS, Android, Ionic
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Database
+                                </div>
+                                <div class="project-name">
+                                    MySql, MongoDB, PostgreSQL
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>{{_ "text_download"}}</h2>
+                <a href="/files/ResumeKeynerTYC.pdf" class="btn btn-default btn-xl wow tada">{{_ "text_btn_download"}}</a>
+            </div>
+        </div>
+    </aside>
+    {{> send_email }}
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/creative.js"></script>
+</template>
